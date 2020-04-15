@@ -1,77 +1,72 @@
-console.log('app.js');
-
-//Create
-var todos = ['운동'];
-var todo = '게임';
-todos.push(todo);
-console.log(todos);
-
-//Read
-
-todos.forEach(function(todo){
-    console.log(todo);
+var link = document.querySelector('#link');
+link.addEventListener('click',function(){
+    console.log(11111111);
+    event.preventDefault();
 });
 
-//Update
-// var todos = ['운동', '게임'];
-// var updateTodo = '게임';
-// var updateIndex = todos.f indIndex(function(todo) {
-//     return todo === updateTodo;
+
+// var list = document.querySelector('#list');
+
+// console.log(list.children);
+
+// var app = document.getElementById('list');
+
+// app.addEventListener('click', function(event) {
+//     if (event.target.nodeName == 'LI'){
+//        //한개의 event리스너로 모든 li에 click이벤트 등록과 비슷
+//        console.log('li');
+//     }
+//     event.stopPropagation();
 // });
-// todos[updateIndex] = '공부';
-// console.log(todos); 
-
-//Delete
-// var todos = ['운동', '공부', '목욕'];
-// var deleteTodo = '공부';
-// var deleteIndex = todos.findIndex(function(todo) {
-//   return todo === deleteTodo;
+// document.body.addEventListener('click', function(){
+//     console.log('body');
 // });
-// todos.splice(deleteIndex, 1);
-// console.log(todos);
 
-// var isMan = false;
-// if (isMan) {
-//     console.log('1');
-//
-// }
-// else if(isMan && isMan) {
-
-// }
-// else {
-//     console.log('2');
+// debugger;
+// for(var i = 0; i<list.children.length; i++){
+// list.children[i].addEventListener('click', function(){
+// console.log('click');
+// })
 // }
 
-// windows.alert('1');
-// var who = prompt('당신은 누구세요?');
-// console.log(who);
 
-// var isDelete = confirm('정말 삭제합니까?');
-// console.log(isDelete);
+// var clickCount = 0;
 
-// function sum(a, b) {
-//     return a + b;
+// function popup(event){
+//     console.log(++clickCount);
+//     console.log(arguments ,event ,event.type,event.currentTarget);
 // }
-// console.log(sum(1, 2));
 
-// var car = {
-//     year: '2014',
-//     starting: function() {
-//       console.log('starting..'); 
-//     },
-//   };
-  
-//   car.starting();
 
-// (function() {
-//     var a = 'a';
-//     console.log(a);
-//   })();
+// console.log(window.name);
+// console.log(window.outerWidth);
+//window.open("http://naver.com");
 
-function sum(x, y) {
-    if (!y) y = 1;
-    console.log(x + y);
-  }
-  console.log(sum(3));
-  console.log(sum(3,3));
-  
+//var debug = document.getElementById('debug');
+//console.log(debug);
+
+// var box = document.querySelector('#debug');
+// console.log(box);
+
+//var box = document.querySelector(".box");
+// var box2 = document.querySelectorAll(".box");
+// console.log(box2);
+
+// var div = document.createElement('div');
+// console.log(div);
+// div.style.border = '1px solid #000'
+// div.innerHTML = "hello";
+
+// document.body.appendChild(div);
+
+
+// const span = document.createElement('span');
+// const textNode = document.createTextNode('hello!'); 
+// span.appendChild(textNode);
+// document.querySelector('#debug').appendChild(span);
+
+// var debug = document.getElementById('debug');
+// debug.remove();
+
+// const list = document.getElementById('list');
+// list.removeChild(list.children[0]);
